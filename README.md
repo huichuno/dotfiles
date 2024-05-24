@@ -1,4 +1,4 @@
-# vimrc
+# dotfiles
 
 ## Download & Install
 ```sh
