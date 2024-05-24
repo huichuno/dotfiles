@@ -2,5 +2,5 @@
 
 ## Download & Install
 ```sh
-curl -fsSL https://raw.githubusercontent.com/huichuno/vimrc/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/huichuno/dotfiles/main/install.sh | sh
 ```
