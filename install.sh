@@ -1,19 +1,29 @@
 #!/bin/bash
 
-sudo apt install neovim git -y
+sudo apt install neovim tmux git -y
 
-# download init.vim
+# Download neovim config: init.vim
 sh -c 'curl -fLo $HOME/.config/nvim/init.vim --create-dirs \
 	     https://raw.githubusercontent.com/huichuno/vimrc/main/init.vim'
 
-# install plugin manager
-
+# Install neovim plugin manager
 sh -c 'curl -fLo "$HOME/.local/share}"/nvim/site/autoload/plug.vim \
        --create-dirs \
-	     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# Download tmux config: tmux.conf
+sh -c 'curl -fLo $HOME/.config/tmux/tmux.conf --create-dirs \
+       https://raw.githubusercontent.com/huichuno/vimrc/main/tmux.conf'
+
+# Download tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo 
+echo "Please follow instructions below to complete the installation:"
+echo
 echo 'Launch "nvim" > press <Enter> > run ":PlugInstall" command'
 echo 'Run "PlugUpdate" to install or update plugins'
+echo
+echo 'Launch "tmux" > press "Ctrl + Space + I" to install plugin'
 echo
 
