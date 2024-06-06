@@ -7,7 +7,7 @@ sh -c 'curl -fLo $HOME/.config/nvim/init.vim --create-dirs \
 	     https://raw.githubusercontent.com/huichuno/vimrc/main/init.vim'
 
 # Install neovim plugin manager
-sh -c 'curl -fLo "$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+sh -c 'curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Download tmux config: tmux.conf
